@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Quick-find (Eager approach)
  */
-public class QuickFindAl {
+public class QuickFindAlg {
   /**
    *
    * @param args the command-line arguments
