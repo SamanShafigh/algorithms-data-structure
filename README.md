@@ -1,9 +1,8 @@
-# algorithms
+# Algorithms & Data Structure in (Java, JavaScript, Go)
 
 ## Prerequisites
 npm install -g ts-node
 npm install -g typescript
-
 
 ## Run typescript samples
 cd union-find
