@@ -1,8 +1,27 @@
-class QuickFind {
-  private nodes: number[]
+/**
+ * Quick-find (Eager approach)
+ */
+class QuickFindAlg {
+  public static main(): void {
+    
+    const qf = new QuickFind(10);
+    qf.union(2, 3);
+    qf.union(4, 5);
+    qf.union(1, 3);
+    qf.union(7, 6);
+    
+    console.log(String(qf));
+  }
+}
 
-  constructor() {
+class QuickFind {
+  public nodes: number[]
+
+  constructor(n: number) {
     this.nodes = [];
+    for (let i = 0; i < n; i++) {
+      this.nodes[i] = i;
+    }    
   }
 
   public connected(n: number, m: number): boolean {
@@ -22,4 +41,15 @@ class QuickFind {
       }
     }
   }
+
+  public toString() {
+    var content: String = "";
+    for (let i = 0; i < this.nodes.length; i++) {
+      content = content + `node ${i} is connected to ${this.nodes[i]} \n`;
+    }
+
+    return content;
+  }  
 }
+
+QuickFindAlg.main();

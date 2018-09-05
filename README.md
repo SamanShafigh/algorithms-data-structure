@@ -7,7 +7,7 @@ npm install -g typescript
 
 ## Run typescript samples
 cd union-find
-ts-node quick-find.ts
+ts-node QuickFindAlg.ts
 
 ## Run java samples
 cd union-find

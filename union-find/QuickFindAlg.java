@@ -3,22 +3,18 @@
  */
 public class QuickFindAlg {
   public static void main(String[] args) {
-    
     QuickFind qf = new QuickFind(10);
     qf.union(2, 3);
     qf.union(4, 5);
     qf.union(1, 3);
     qf.union(7, 6);
     
-    for (int i = 0; i < qf.nodes.length; i++) {
-      System.out.println("node " + i + " is connected to " + qf.nodes[i]); 
-    }
+    System.out.println(qf);
   }
 }
 
 class QuickFind {
-
-  public int[] nodes;
+  private int[] nodes;
 
   public QuickFind(int n) {
     nodes = new int[n];
@@ -44,4 +40,13 @@ class QuickFind {
       }
     }
   }
+
+  public String toString() {
+    String content = "";
+    for (int i = 0; i < nodes.length; i++) {
+      content = content + "node " + i + " is connected to " + nodes[i] + "\n"; 
+    }
+
+    return content;
+  }  
 }

@@ -1,46 +1,35 @@
-import java.util.Scanner;
-
 /**
  * Quick-union (Eager approach)
  */
 public class QuickUnionAlg {
   public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
-
-    System.out.println("Enter the size: ");
-    int count = scan.nextInt();
-    QuickFind qu = new QuickUnion(count);
-
-    System.out.println("Enter a list of number: ");
-    while (scan.hasNextInt()) {
-        int n = scan.nextInt();
-        int m = scan.nextInt();
-        qu.union(n, m);
-        System.out.println(n + " - " + m);
-    }
+    QuickUnion qu = new QuickUnion(10);
+    qu.union(2, 3);
+    qu.union(4, 5);
+    qu.union(1, 3);
+    qu.union(7, 6);
     
-    scan.close();
-    System.out.println(qu.stringify());
+    System.out.println(qu); 
   }
 }
 
 class QuickUnion {
 
-  private int[] id;
+  private int[] nodes;
 
-  public QuickUnion(int n) {
-    id = new int[n];
-    for (int i = 0; i < id.length; i++) {
-      id[i] = i;
+  public QuickUnion(int size) {
+    nodes = new int[size];
+    for (int i = 0; i < nodes.length; i++) {
+      nodes[i] = i;
     }
   }
 
-  public int root(int i) {
-    while (i != id[i]) {
-      i = id[i];
+  public int root(int n) {
+    while (n != nodes[n]) {
+      n = nodes[n];
     }
 
-    return i;
+    return n;
   }
 
   public boolean connected(int n, int m) {
@@ -54,13 +43,13 @@ class QuickUnion {
 
     int nId = root(n);
     int mId = root(m);
-    id[nId] = mId;
+    nodes[nId] = mId;
   }
 
-  public String stringify() {
+  public String toString() {
     String content = "";
-    for (int i = 0; i < id.length; i++) {
-      content = content + " node " + i + " is connected to " + id[i] + "\n"; 
+    for (int i = 0; i < nodes.length; i++) {
+      content = content + "node " + i + " is connected to " + nodes[i] + "\n"; 
     }
 
     return content;
