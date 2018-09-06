@@ -3,6 +3,7 @@
 ## Quick Find Algorithm
 
 ![Quick Find Algorithm](asset/quick-find.png?raw=true "Quick Find Algorithm")
+![Quick Find Algorithm](asset/quick-find-2.png?raw=true "Quick Find Algorithm")
 
 ```java
   public boolean connected(int n, int m) {
