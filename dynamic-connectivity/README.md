@@ -4,7 +4,7 @@ A dynamic connectivity structure is a data structure that dynamically maintains 
 
 ![Dynamic connectivity problem](asset/connectivity-problem.png "Dynamic connectivity problem")
 
-The idea is to first be able to connect two nodes `n` and `m` and then we can check if node `n'` is connected directly or indirectly to node `m'`. In other word to find if there is apth between node `n'` and `m'`
+The idea is to first be able to connect two nodes `n` and `m` and then we can check if node `n'` is connected directly or indirectly to node `m'`. In other word we try to find if we can find a path between node `n'` and `m'`
 
 Application fo dynamic connectivity would be:
 * Network to find a connection between two node
