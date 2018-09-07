@@ -1,8 +1,20 @@
-# Union Find
+# Dynamic connectivity problem
+ 
+A dynamic connectivity structure is a data structure that dynamically maintains information about the connected components of a graph.
+
+![Dynamic connectivity problem](asset/connectivity-problem.png "Dynamic connectivity problem")
+
+The idea is to first be able to connect two nodes `n` and `m` and then we can check if node `n'` is connected directly or indirectly to node `m'`. In other word to find if there is apth between node `n'` and `m'`
+
+Application fo dynamic connectivity would be:
+* Network to find a connection between two node
+* Social network to find a relationship between two person
+* Pixels in a digital photo
+* and more ...
 
 ## Quick Find Algorithm
 
-![Quick Find Algorithm](asset/quick-find.png?raw=true "Quick Find Algorithm")
+![Quick Find Algorithm](asset/quick-find.png "Quick Find Algorithm")
 
 ```java
   public boolean connected(int n, int m) {
@@ -22,7 +34,7 @@
 
 ## Quick Union Algorithm
 
-![Quick Union Algorithm](asset/quick-union.png?raw=true "Quick Union Algorithm")
+![Quick Union Algorithm](asset/quick-union.png "Quick Union Algorithm")
 
 Depth of a node when we have `n` nodes in the worst case scenario is `n`. In this case we have a slim tree.  
 
