@@ -41,9 +41,9 @@ class QuickUnion {
       return;
     }
 
-    int nId = root(n);
-    int mId = root(m);
-    nodes[nId] = mId;
+    int nRoot = root(n);
+    int mRoot = root(m);
+    nodes[nRoot] = mRoot;
   }
 
   public String toString() {
