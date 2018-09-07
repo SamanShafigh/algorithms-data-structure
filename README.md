@@ -1,4 +1,5 @@
-# Algorithms & Data Structure <font style="font-size:15px">(with example in Java, TypeScript, & Go)</font>
+Algorithms & Data Structure <font style="font-size:15px">(with example in Java, TypeScript, & Go)</font>
+===
 
 This repository summarize the fundamentals of algorithms & data structures, with short explanations and focusing on key points along with a Java, TypeScript implementations. I'll also add examples in Golang as I continue.
 <p align="center"> 
