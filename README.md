@@ -1,7 +1,7 @@
 # Algorithms & Data Structure
 
 <p align="center"> 
-  <img src="asset/algorithm-data-structure.png" title="Algorithms & Data Structure">
+  <img src="logo.png" title="Algorithms & Data Structure">
 </p>
 This repository summarize the fundamentals of algorithms & data structures, with short explanations and focusing on key points along with a Java, TypeScript implementations. I'll also add examples in Golang as I continue.
 
