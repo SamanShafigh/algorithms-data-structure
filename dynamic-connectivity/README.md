@@ -61,6 +61,8 @@ Depth of a node when we have `n` nodes in the worst case scenario is `n`. In thi
 
 An optimized version Quick-union by checking the size of each tree before connecting them together. The goal is to always add the small tree as a child of large tree. This strategy insures that the final tree is more flat compare to non optimized version of this algorithem.
 
+![Shape of tree](asset/tree-shape.png "Shape of tree")
+
 Depth of any node when we have `n` nodes in the worst case scenario is `lg n (binary log,  log2 n)`. Fro example for 100,000,000 nodes the max depth is ~ 26 which is amazingly good
 
 ```java
