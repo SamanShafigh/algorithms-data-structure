@@ -1,14 +1,13 @@
-Algorithms & Data Structure <font style="font-size:15px">(with example in Java, TypeScript, & Go)</font>
-===
+# Algorithms & Data Structure (Java, TypeScript, & Go)
 
-This repository summarize the fundamentals of algorithms & data structures, with short explanations and focusing on key points along with a Java, TypeScript implementations. I'll also add examples in Golang as I continue.
 <p align="center"> 
   <img src="asset/algorithm-data-structure.png" title="Algorithms & Data Structure">
 </p>
+This repository summarize the fundamentals of algorithms & data structures, with short explanations and focusing on key points along with a Java, TypeScript implementations. I'll also add examples in Golang as I continue.
 
 ## Topics
 
-[1. Dynamic Connectivity](dynamic-connectivity/README.md)
+[1. Dynamic Connectivity 🐱](dynamic-connectivity/README.md)
 
 ## Run examples
 Prerequisites: Install typescript and ts-node
