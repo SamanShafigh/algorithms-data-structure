@@ -4,25 +4,27 @@
  * This strategy insures that the final tree is more flat compare to non optimized 
  * version of this algorithem.
  */
-class QuickUnionAlg {
+class WeightedQuickUnionAlg {
   public static main(): void {
+    const wqu = new WeightedQuickUnion(10);
+    wqu.union(2, 3);
+    wqu.union(4, 5);
+    wqu.union(1, 3);
+    wqu.union(7, 6);
     
-    const qu = new QuickUnion(10);
-    qu.union(2, 3);
-    qu.union(4, 5);
-    qu.union(1, 3);
-    qu.union(7, 6);
-    
-    console.log(String(qu));
+    console.log(wqu.connected(2, 3));
+    console.log(wqu.connected(1, 2));
+    console.log(wqu.connected(8, 9));
   }
 }
 
-class QuickUnion {
+class WeightedQuickUnion {
   public nodes: number[]
   public weight: number[]
 
   constructor(size: number) {
     this.nodes = new Array(size);
+    this.weight = new Array(size);
     for (let i = 0; i < size; i++) {
       this.nodes[i] = i;
       this.weight[i] = 1;
@@ -56,15 +58,6 @@ class QuickUnion {
       this.weight[mRoot] += this.weight[nRoot]
     }
   }
-
-  public toString() {
-    var content: String = "";
-    for (let i = 0; i < this.nodes.length; i++) {
-      content = content + `node ${i} is connected to ${this.nodes[i]} \n`;
-    }
-
-    return content;
-  }
 }
 
-QuickUnionAlg.main();
+WeightedQuickUnionAlg.main();

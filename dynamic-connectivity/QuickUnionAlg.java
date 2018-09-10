@@ -9,7 +9,9 @@ public class QuickUnionAlg {
     qu.union(1, 3);
     qu.union(7, 6);
     
-    System.out.println(qu); 
+    System.out.println(qu.connected(2, 3));
+    System.out.println(qu.connected(1, 2));
+    System.out.println(qu.connected(8, 9));
   }
 }
 
@@ -44,14 +46,5 @@ class QuickUnion {
     int nRoot = root(n);
     int mRoot = root(m);
     nodes[nRoot] = mRoot;
-  }
-
-  public String toString() {
-    String content = "";
-    for (int i = 0; i < nodes.length; i++) {
-      content = content + "node " + i + " is connected to " + nodes[i] + "\n"; 
-    }
-
-    return content;
   }
 }

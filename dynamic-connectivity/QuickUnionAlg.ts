@@ -3,14 +3,15 @@
  */
 class QuickUnionAlg {
   public static main(): void {
-    
     const qu = new QuickUnion(10);
     qu.union(2, 3);
     qu.union(4, 5);
     qu.union(1, 3);
     qu.union(7, 6);
     
-    console.log(String(qu));
+    console.log(qu.connected(2, 3));
+    console.log(qu.connected(1, 2));
+    console.log(qu.connected(8, 9));
   }
 }
 
@@ -44,15 +45,6 @@ class QuickUnion {
     var nRoot = this.root(n)
     var mRoot = this.root(m)
     this.nodes[nRoot] = mRoot;
-  }
-
-  public toString() {
-    var content: String = "";
-    for (let i = 0; i < this.nodes.length; i++) {
-      content = content + `node ${i} is connected to ${this.nodes[i]} \n`;
-    }
-
-    return content;
   }
 }
 

@@ -12,7 +12,9 @@ public class WeightedQuickUnionAlg {
     wqu.union(1, 3);
     wqu.union(7, 6);
     
-    System.out.println(wqu);
+    System.out.println(wqu.connected(2, 3));
+    System.out.println(wqu.connected(1, 2));
+    System.out.println(wqu.connected(8, 9));
   }
 }
 
@@ -55,14 +57,5 @@ class WeightedQuickUnion {
       nodes[nRoot] = mRoot;
       weight[mRoot] += weight[nRoot];
     }
-  }
-
-  public String toString() {
-    String content = "";
-    for (int i = 0; i < nodes.length; i++) {
-      content = content + "node " + i + " is connected to " + nodes[i] + "\n"; 
-    }
-
-    return content;
   }
 }

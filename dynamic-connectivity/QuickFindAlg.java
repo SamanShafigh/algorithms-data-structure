@@ -9,7 +9,9 @@ public class QuickFindAlg {
     qf.union(1, 3);
     qf.union(7, 6);
     
-    System.out.println(qf);
+    System.out.println(qf.connected(2, 3));
+    System.out.println(qf.connected(1, 2));
+    System.out.println(qf.connected(8, 9));
   }
 }
 
@@ -40,13 +42,4 @@ class QuickFind {
       }
     }
   }
-
-  public String toString() {
-    String content = "";
-    for (int i = 0; i < nodes.length; i++) {
-      content = content + "node " + i + " is connected to " + nodes[i] + "\n"; 
-    }
-
-    return content;
-  }  
 }
