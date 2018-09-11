@@ -1,22 +1,22 @@
 /**
  * 
  */
-public class LinkedListQueueAlg {
+class LinkedListStackAlg {
   public static void main(String[] args) {
-    LinkedListQueue q = new LinkedListQueue();
-    q.push("a");
-    q.push("b");
-    q.push("c");
-    q.push("d");
+    LinkedListStack s = new LinkedListStack();
+    s.push("a");
+    s.push("b");
+    s.push("c");
+    s.push("d");
     
-    System.out.println(q.pop());
-    System.out.println(q.pop());
-    System.out.println(q.pop());
-    System.out.println(q.pop());
+    System.out.println(s.pop());
+    System.out.println(s.pop());
+    System.out.println(s.pop());
+    System.out.println(s.pop());
   }
 }
 
-class LinkedListQueue {
+class LinkedListStack {
   private Node first = null;
 
   private class Node {
