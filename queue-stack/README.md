@@ -8,4 +8,4 @@ Space complexity: 16 bytes (object overhead) + 8 bytes (inner class extra overhe
 
 
 ## Stack (array)
-Array implementation of stack is faster than linked-list however we have to deal with the stack overflows issue when the number of items in the stack exceeds the capacity of the array.
+Array implementation of stack is faster than linked-list however we have to deal with the stack overflows issue when the number of items in the stack exceeds the capacity of the array.# online-courses
