@@ -63,3 +63,36 @@ class ArrayFixedStack {
   }
 }
 ```
+
+
+## Stack (resizing-array)
+
+A quick solution would be to create one size bigger array when we push and one size smaller when we pop however this is too expensive. For example to insert N items it will takes 1 + 2 + 3 + ... + N = N^2/2 which is infeasible for large N. 
+
+To overcome this issue we try to resize the array infrequently as much as possible. For example one technique is Repeated Doubling when the array is full we create a new array twice the size.
+
+Efficient solution:
+* push(): double size of array when it is full
+* pop(): halve size of array when it is one-quarter full
+
+```java
+  public void push(String item) {
+    if (n == s.length) resize(2 * n);
+    s[n++] = item;
+  }
+
+  private void resize(int capacity) {
+    String[] copy = new String[capacity];
+    for (int i = 0; i < n; i++) {
+      copy[i] = s[i];
+    }
+    s = copy;
+  }
+```
+Now the cost of inserting first N items is: 
+N + (2 + 4 + 8 + ... + N) ~ 3N
+
+N: 1 array access per push
+2 + 4 + 8 + ... + N: k array accesses to double to size k
+
+*Why one-quarter?* let say we double the size of array when it is full and halve it when it is one-half full: now consider push-pop-push-pop operations when array if full. Each operation takes time proportional to N and we call it thrashing issue. 

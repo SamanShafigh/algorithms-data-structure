@@ -1,6 +1,6 @@
-public class ArrayFixedStackAlg {
+public class ResizingArrayStackAlg {
   public static void main(String[] args) {
-    ArrayFixedStack s = new ArrayFixedStack(5);
+    ResizingArrayStack s = new ResizingArrayStack(5);
     s.push("a");
     s.push("b");
     s.push("c");
@@ -17,11 +17,11 @@ public class ArrayFixedStackAlg {
   }
 }
 
-class ArrayFixedStack {
+class ResizingArrayStack {
   private String[] s;
   private int n = 0;
 
-  public ArrayFixedStack(int capacity) {
+  public ResizingArrayStack(int capacity) {
     s = new String[capacity];
   }
 
@@ -30,6 +30,7 @@ class ArrayFixedStack {
   }
 
   public void push(String item) {
+    if (n == s.length) resize(2 * n);
     s[n++] = item;
   }
 
@@ -39,5 +40,13 @@ class ArrayFixedStack {
     // reclaim memory only if no outstanding refrences
     s[n] = null;
     return item;
+  }
+
+  private void resize(int capacity) {
+    String[] copy = new String[capacity];
+    for (int i = 0; i < n; i++) {
+      copy[i] = s[i];
+    }
+    s = copy;
   }
 }
