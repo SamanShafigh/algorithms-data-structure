@@ -95,4 +95,8 @@ N + (2 + 4 + 8 + ... + N) ~ 3N
 N: 1 array access per push
 2 + 4 + 8 + ... + N: k array accesses to double to size k
 
+![thrashing issue](asset/resize-array-stack-thrashing-issue.png "thrashing issue")
+
 *Why one-quarter?* let say we double the size of array when it is full and halve it when it is one-half full: now consider push-pop-push-pop operations when array if full. Each operation takes time proportional to N and we call it thrashing issue. 
+
+
