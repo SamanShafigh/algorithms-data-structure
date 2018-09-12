@@ -39,7 +39,7 @@ class LinkedListStack {
 ## Stack (array)
 Array implementation of stack is faster than linked-list however we have to deal with the stack overflows issue when the number of items in the stack exceeds the capacity of the array.# online-courses
 
-![array-stack](asset/array-stack-n.png "array-stack")
+![array-stack](asset/array-stack-o.png "array-stack")
 
 ```java
 class ArrayFixedStack {
