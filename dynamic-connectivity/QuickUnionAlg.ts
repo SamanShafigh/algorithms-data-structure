@@ -16,7 +16,7 @@ class QuickUnionAlg {
 }
 
 class QuickUnion {
-  public nodes: number[]
+  private nodes: number[]
 
   constructor(size: number) {
     this.nodes = new Array(size);

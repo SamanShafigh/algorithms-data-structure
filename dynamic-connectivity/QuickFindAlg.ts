@@ -16,7 +16,7 @@ class QuickFindAlg {
 }
 
 class QuickFind {
-  public nodes: number[]
+  private nodes: number[]
 
   constructor(n: number) {
     this.nodes = [];

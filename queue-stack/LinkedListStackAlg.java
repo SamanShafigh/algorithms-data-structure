@@ -1,16 +1,14 @@
-/**
- * 
- */
 public class LinkedListStackAlg {
   public static void main(String[] args) {
     LinkedListStack s = new LinkedListStack();
     s.push("a");
     s.push("b");
     s.push("c");
+    System.out.println(s.pop());
+
     s.push("d");
+    System.out.println(s.pop());
     
-    System.out.println(s.pop());
-    System.out.println(s.pop());
     System.out.println(s.pop());
     System.out.println(s.pop());
   }
@@ -42,6 +40,7 @@ class LinkedListStack {
   public String pop() {
     String item = first.item;
     first = first.next;
+    
     return item;
   }
 }

@@ -19,8 +19,8 @@ class WeightedQuickUnionAlg {
 }
 
 class WeightedQuickUnion {
-  public nodes: number[]
-  public weight: number[]
+  private nodes: number[]
+  private weight: number[]
 
   constructor(size: number) {
     this.nodes = new Array(size);

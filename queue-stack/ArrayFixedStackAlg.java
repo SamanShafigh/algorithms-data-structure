@@ -1,6 +1,3 @@
-/**
- * 
- */
 public class ArrayFixedStackAlg {
   public static void main(String[] args) {
     ArrayFixedStack s = new ArrayFixedStack(5);
@@ -8,8 +5,12 @@ public class ArrayFixedStackAlg {
     s.push("b");
     s.push("c");
     s.push("d");
-    
+    s.push("e");
     System.out.println(s.pop());
+
+    s.push("f");
+    System.out.println(s.pop());
+
     System.out.println(s.pop());
     System.out.println(s.pop());
     System.out.println(s.pop());
