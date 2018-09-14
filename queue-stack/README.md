@@ -102,4 +102,4 @@ N: 1 array access per push
 
 ## Queue (linked-list)
 
-![linked-list-queue](asset/link-list-queue.png "linked-list-queue")
+![linked-list-queue](asset/link-list-queue-o.png "linked-list-queue")
