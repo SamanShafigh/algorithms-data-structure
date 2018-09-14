@@ -36,9 +36,8 @@ class ResizingArrayStack {
 
   public String pop() {
     String item = s[--n];
-    // To avoid loitering since garbage collector can 
-    // reclaim memory only if no outstanding refrences
     s[n] = null;
+    if (n > 0 && n == s.length/4) resize(s.length/2);
     return item;
   }
 

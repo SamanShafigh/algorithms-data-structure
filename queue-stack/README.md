@@ -97,6 +97,9 @@ N: 1 array access per push
 
 ![thrashing issue](asset/resize-array-stack-thrashing-issue.png "thrashing issue")
 
-*Why one-quarter?* let say we double the size of array when it is full and halve it when it is one-half full: now consider push-pop-push-pop operations when array if full. Each operation takes time proportional to N and we call it thrashing issue. 
+*Why one-quarter?* let say we double the size of array when it is full and halve it when it is one-half full: now consider push-pop-push-pop operations when array if full. Each operation takes time proportional to N and we call it `thrashing issue`. 
 
 
+## Queue (linked-list)
+
+![linked-list-queue](asset/link-list-queue.png "linked-list-queue")
