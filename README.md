@@ -7,8 +7,8 @@ This repository summarize the fundamentals of algorithms & data structures, with
 
 ## Topics
 
-* [1. Dynamic Connectivity](dynamic-connectivity/README.md) 🐱
-* [2. Queue & Stack](queue-stack/README.md) 🐜
+* [1. Dynamic Connectivity](dynamic-connectivity) 🐱
+* [2. Queue & Stack](queue-stack) 🐜
 
 ## Run examples
 Prerequisites: Install typescript and ts-node
