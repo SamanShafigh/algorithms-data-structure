@@ -1,9 +1,17 @@
 # Elementary Sorts
 
-Qoal: Sort any type of data: 
+Qoal: Sort any type of data
+
 Q: How can sort() function know how to compare different data types?
+
 A: We use Callback to delegate the job to client to determine whether or not an item `a` is leeds, bigger or equal than item `b`
 
+Callback Implementation
+- Java: interface
+- C: function pointers
+- C++: class-type functors
+- C#: delegates
+- Python, JavaScript: first-class functions
 
 ## Selection Sort
 
