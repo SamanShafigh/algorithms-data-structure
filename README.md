@@ -9,6 +9,7 @@ This repository summarize the fundamentals of algorithms & data structures, with
 
 * [1. Dynamic Connectivity](dynamic-connectivity) 🐱
 * [2. Queue & Stack](queue-stack) 🐜
+* [3. Elementary Sports](elementary-sorts) 🐌
 
 ## Run examples
 Prerequisites: Install typescript and ts-node
