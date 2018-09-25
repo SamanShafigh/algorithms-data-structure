@@ -1,5 +1,5 @@
 # Dynamic connectivity problem
- 
+
 A dynamic connectivity structure is a data structure that dynamically maintains information about the connected components of a graph.
 
 ![Dynamic connectivity problem](asset/connectivity-problem.png "Dynamic connectivity problem")
